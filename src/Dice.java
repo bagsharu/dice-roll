@@ -8,10 +8,12 @@ public class Dice {
 
     // Método de rolagem de dado
 
-    void diceRoll() {
+    void diceRoll(int rollValue) {
 
         // Imprime o "nome" do dado concatenado com seu número de lados e a rolagem em sequência.
-        System.out.println("d" + numLados + " = " + (roll.nextInt(numLados + 1)));
+        for (int i = 1; i <= rollValue ; i++) {
+            System.out.println("d" + numLados + " = " + (roll.nextInt(numLados + 1)));
+        }
     }
 
 
