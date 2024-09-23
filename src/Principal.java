@@ -8,7 +8,7 @@ public class Principal {
         Dice dadinho = new Dice();
 
         System.out.println("Insira quantos lados tem o dado:");
-        dadinho.numLados = scanner.nextInt();
+        dadinho.setNumLados(scanner.nextInt());
 
         System.out.println("Agora, quantas rolagens você deseja:");
         int numRolagens = scanner.nextInt();
