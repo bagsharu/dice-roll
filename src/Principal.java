@@ -7,13 +7,15 @@ public class Principal {
 
         // Instanciando objetos
         Scanner scanner = new Scanner(System.in);
-        Dice dadinho = new Dice();
 
         System.out.println("Insira quantos lados tem o dado:");
-        dadinho.setNumLados(scanner.nextInt());
+        int numDado = scanner.nextInt();
+
+        Dice dadinho = new Dice(numDado);
 
         System.out.println("Agora, quantas rolagens você deseja:");
         int numRolagens = scanner.nextInt();
+
 
         dadinho.diceRoll(numRolagens);
 
