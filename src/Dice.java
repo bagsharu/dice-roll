@@ -11,7 +11,7 @@ public class Dice {
     void diceRoll() {
 
         // Imprime o "nome" do dado concatenado com seu número de lados e a rolagem em sequência.
-        System.out.println("d" + numLados + " = " + roll.nextInt(numLados) +1);
+        System.out.println("d" + numLados + " = " + (roll.nextInt(numLados + 1)));
     }
 
 
