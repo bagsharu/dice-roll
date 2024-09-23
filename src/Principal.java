@@ -1,3 +1,5 @@
+import bagsharu.dice.Dice;
+
 import java.util.Scanner;
 
 public class Principal {

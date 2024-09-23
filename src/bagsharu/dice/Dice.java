@@ -1,3 +1,5 @@
+package bagsharu.dice;
+
 import java.util.Random;
 
 public class Dice {
@@ -8,7 +10,7 @@ public class Dice {
 
     // Método de rolagem de dado
 
-    void diceRoll(int rollValue) {
+    public void diceRoll(int rollValue) {
 
         // Imprime o "nome" do dado concatenado com seu número de lados e a rolagem em sequência.
         for (int i = 1; i <= rollValue ; i++) {
