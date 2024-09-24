@@ -1,9 +1,18 @@
-package bagsharu.dice;
+package bagsharu.character;
 
 public class Character {
 
         private String nome;
         private String classe;
+        private int characterHP;
+
+    public int getCharacterHP() {
+        return characterHP;
+    }
+
+    public void setCharacterHP(int characterHP) {
+        this.characterHP = characterHP;
+    }
 
     public String getNome() {
         return nome;
@@ -25,8 +34,9 @@ public class Character {
     // Imprime a ficha de personagem
     public void characterSheet () {
 
-        System.out.println("Nome: " + nome);
-        System.out.println("Classe: " + classe);
+        System.out.println("\nNome: " + nome);
+        System.out.println("\nClasse: " + classe);
+        System.out.println("\nPontos de Vida: " + characterHP);
 
     }
 

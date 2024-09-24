@@ -1,6 +1,6 @@
 package bagsharu.dice;
 
-import java.util.Scanner;
+import bagsharu.character.*;
 
 public class Principal {
     public static void main(String[] args) {
@@ -22,20 +22,15 @@ public class Principal {
 
         Guerreiro guerreiro = new Guerreiro();
         Mago mago = new Mago();
-        Arqueiro arqueiro = new Arqueiro();
+        Ladino ladino = new Ladino();
 
         guerreiro.setNome("Brutus");
-        guerreiro.setClasse("Guerreiro");
-
         mago.setNome("Star");
-        mago.setClasse("Mago");
-
-        arqueiro.setNome("Oscar");
-        arqueiro.setClasse("Arqueiro");
+        ladino.setNome("Oscar");
 
         guerreiro.characterSheet();
         mago.characterSheet();
-        arqueiro.characterSheet();
+        ladino.characterSheet();
 
 
     }

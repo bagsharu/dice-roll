@@ -1,4 +1,4 @@
-package bagsharu.dice;
+package bagsharu.character;
 
 public class Guerreiro extends Character{
 
@@ -7,6 +7,7 @@ public class Guerreiro extends Character{
     @Override
     public void characterSheet() {
         super.setClasse("Guerreiro");
+        super.setCharacterHP(10);
         super.characterSheet();
     }
 }
