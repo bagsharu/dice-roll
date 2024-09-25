@@ -1,10 +1,13 @@
 package bagsharu.character;
 
+import bagsharu.dice.Dice;
+
 public class Character {
 
         private String nome;
         private String classe;
         private int characterHP;
+        private Dice hpDice = new Dice(characterHP);
 
     public int getCharacterHP() {
         return characterHP;
@@ -30,6 +33,13 @@ public class Character {
         this.classe = classe;
     }
 
+    public Dice getHpDice() {
+        return hpDice;
+    }
+
+    public void setHpDice(Dice hpDice) {
+        this.hpDice = hpDice;
+    }
 
     // Imprime a ficha de personagem
     public void characterSheet () {
@@ -39,5 +49,4 @@ public class Character {
         System.out.println("\nPontos de Vida: " + characterHP);
 
     }
-
 }
