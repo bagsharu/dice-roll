@@ -25,8 +25,11 @@ public class Principal {
         Ladino ladino = new Ladino();
 
         guerreiro.setNome("Brutus");
+        guerreiro.setCharacterLevel(11);
         mago.setNome("Star");
+        mago.setCharacterLevel(9);
         ladino.setNome("Oscar");
+        ladino.setCharacterLevel(16);
 
         guerreiro.characterSheet();
         mago.characterSheet();

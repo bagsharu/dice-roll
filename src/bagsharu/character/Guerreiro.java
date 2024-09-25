@@ -10,4 +10,5 @@ public class Guerreiro extends Character{
         super.setCharacterHP(10);
         super.characterSheet();
     }
+
 }

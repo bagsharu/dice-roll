@@ -15,12 +15,15 @@ public class Dice {
     }
 // Método de rolagem de dado
 
-    public void diceRoll(int rollValue) {
+    public int diceRoll() {
 
-        // Imprime o "nome" do dado concatenado com seu número de lados e a rolagem em sequência.
-        for (int i = 1; i <= rollValue ; i++) {
-            System.out.printf(nomeDado + " = %d\n", (roll.nextInt(numDado) + 1));
-        }
+          // Obsoleto
+//        // Imprime o "nome" do dado concatenado com seu número de lados e a rolagem em sequência.
+//        for (int i = 1; i <= rollValue ; i++) {
+//            System.out.printf(nomeDado + " = %d\n", (roll.nextInt(numDado) + 1));
+//        }
+
+        return (roll.nextInt(numDado) + 1);
     }
 
     // Método Getter e Setter

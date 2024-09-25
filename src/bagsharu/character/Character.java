@@ -1,11 +1,13 @@
 package bagsharu.character;
 
+import bagsharu.calc.HitPoints;
 import bagsharu.dice.Dice;
 
-public class Character {
+public class Character  {
 
         private String nome;
         private String classe;
+        private int characterLevel;
         private int characterHP;
         private Dice hpDice = new Dice(characterHP);
 
@@ -39,6 +41,10 @@ public class Character {
 
     public void setHpDice(Dice hpDice) {
         this.hpDice = hpDice;
+    }
+
+    public void setCharacterLevel(int characterLevel) {
+        this.characterLevel = characterLevel;
     }
 
     // Imprime a ficha de personagem
