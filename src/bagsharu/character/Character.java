@@ -11,6 +11,12 @@ public class Character  {
         private int characterHP;
         private Dice hpDice = new Dice(characterHP);
 
+        public Character(String nome, int characterLevel) {
+
+            this.nome = nome;
+            this.characterLevel = characterLevel;
+        }
+
     public int getCharacterHP() {
         return characterHP;
     }
@@ -23,15 +29,11 @@ public class Character  {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
     public String getClasse() {
         return classe;
     }
 
-    public void setClasse(String classe) {
+    protected void setClasse(String classe) {
         this.classe = classe;
     }
 

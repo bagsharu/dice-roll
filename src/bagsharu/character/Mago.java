@@ -4,10 +4,15 @@ public class Mago extends Character{
 
     private String magiaFavorita;
 
-    @Override
-    public void characterSheet() {
+    public Mago(String nome, int characterLevel) {
+        super(nome, characterLevel);
         super.setClasse("Mago");
         super.setCharacterHP(6);
-        super.characterSheet();
     }
+//    @Override
+//    public void characterSheet() {
+//        super.setClasse("Mago");
+//        super.setCharacterHP(6);
+//        super.characterSheet();
+//    }
 }

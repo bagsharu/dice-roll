@@ -2,6 +2,9 @@ package bagsharu.dice;
 
 import bagsharu.character.*;
 
+import java.lang.Character;
+import java.util.ArrayList;
+
 public class Principal {
     public static void main(String[] args) {
 
@@ -20,20 +23,19 @@ public class Principal {
 //        dadinho.diceRoll(numRolagens);
 
 
-        Guerreiro guerreiro = new Guerreiro();
-        Mago mago = new Mago();
-        Ladino ladino = new Ladino();
+        Guerreiro guerreiro = new Guerreiro("Brutus",15);
+        Mago mago = new Mago("Star",12);
+        Ladino ladino = new Ladino("Oscar",18);
 
-        guerreiro.setNome("Brutus");
-        guerreiro.setCharacterLevel(11);
-        mago.setNome("Star");
-        mago.setCharacterLevel(9);
-        ladino.setNome("Oscar");
-        ladino.setCharacterLevel(16);
+//        guerreiro.setNome("Brutus");
+//        mago.setNome("Star");
+//        ladino.setNome("Oscar");
 
-        guerreiro.characterSheet();
-        mago.characterSheet();
-        ladino.characterSheet();
+//        ArrayList<Character> characters = new ArrayList<>();
+//
+//        guerreiro.characterSheet();
+//        mago.characterSheet();
+//        ladino.characterSheet();
 
 
     }
