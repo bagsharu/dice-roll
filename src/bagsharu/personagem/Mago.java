@@ -1,6 +1,6 @@
-package bagsharu.character;
+package bagsharu.personagem;
 
-public class Mago extends Character{
+public class Mago extends Personagem {
 
     private String magiaFavorita;
 

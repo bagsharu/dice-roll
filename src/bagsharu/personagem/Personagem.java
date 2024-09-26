@@ -1,9 +1,8 @@
-package bagsharu.character;
+package bagsharu.personagem;
 
-import bagsharu.calc.HitPoints;
 import bagsharu.dice.Dice;
 
-public class Character  {
+public class Personagem {
 
         private String nome;
         private String classe;
@@ -11,7 +10,7 @@ public class Character  {
         private int characterHP;
         private Dice hpDice = new Dice(characterHP);
 
-        public Character(String nome, int characterLevel) {
+        public Personagem(String nome, int characterLevel) {
 
             this.nome = nome;
             this.characterLevel = characterLevel;
@@ -21,7 +20,7 @@ public class Character  {
         return characterHP;
     }
 
-    public void setCharacterHP(int characterHP) {
+    protected void setCharacterHP(int characterHP) {
         this.characterHP = characterHP;
     }
 
@@ -41,11 +40,11 @@ public class Character  {
         return hpDice;
     }
 
-    public void setHpDice(Dice hpDice) {
+    protected void setHpDice(Dice hpDice) {
         this.hpDice = hpDice;
     }
 
-    public void setCharacterLevel(int characterLevel) {
+    protected void setCharacterLevel(int characterLevel) {
         this.characterLevel = characterLevel;
     }
 
@@ -56,5 +55,10 @@ public class Character  {
         System.out.println("\nClasse: " + classe);
         System.out.println("\nPontos de Vida: " + characterHP);
 
+    }
+
+    @Override
+    public String toString() {
+        return "Personagem: " + this.nome + " - Classe: " + this.classe + " - Nivel: " + this.characterLevel;
     }
 }

@@ -1,9 +1,6 @@
 package bagsharu.dice;
 
-import bagsharu.character.*;
-
-import java.lang.Character;
-import java.util.ArrayList;
+import bagsharu.personagem.*;
 
 public class Principal {
     public static void main(String[] args) {
@@ -31,11 +28,11 @@ public class Principal {
 //        mago.setNome("Star");
 //        ladino.setNome("Oscar");
 
-//        ArrayList<Character> characters = new ArrayList<>();
-//
-//        guerreiro.characterSheet();
-//        mago.characterSheet();
-//        ladino.characterSheet();
+//        ArrayList<> characters = new ArrayList<>();
+
+        System.out.println(guerreiro.toString());
+        System.out.println(mago.toString());
+        System.out.println(ladino.toString());
 
 
     }

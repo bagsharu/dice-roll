@@ -15,7 +15,7 @@ public class Dice {
     }
 // Método de rolagem de dado
 
-    public int diceRoll() {
+    public int diceRoll(int valor) {
 
           // Obsoleto
 //        // Imprime o "nome" do dado concatenado com seu número de lados e a rolagem em sequência.
@@ -23,7 +23,7 @@ public class Dice {
 //            System.out.printf(nomeDado + " = %d\n", (roll.nextInt(numDado) + 1));
 //        }
 
-        return (roll.nextInt(numDado) + 1);
+        return (roll.nextInt(valor) + 1);
     }
 
     // Método Getter e Setter

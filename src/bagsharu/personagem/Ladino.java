@@ -1,6 +1,6 @@
-package bagsharu.character;
+package bagsharu.personagem;
 
-public class Ladino extends Character{
+public class Ladino extends Personagem {
 
     private String habilidadeEspecial;
 
