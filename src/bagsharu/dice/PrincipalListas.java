@@ -23,6 +23,9 @@ public class PrincipalListas {
 
         for (Personagem perso : lista) {
 
+            if (perso instanceof Guerreiro) {
+                System.out.println(perso.toString() + " AUUU!!");
+            }
             System.out.println(perso);
         }
 
